@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing | McCue Travel & Cruise</title>
+<meta name="description" content="Transparent planning fees, sample cruise price ranges, and an interactive trip cost estimator from McCue Travel & Cruise.">
+<meta name="theme-color" content="#0b2545">
+<meta property="og:title" content="Pricing | McCue Travel & Cruise">
+<meta property="og:description" content="Transparent planning fees, sample cruise price ranges, and an interactive trip cost estimator from McCue Travel & Cruise.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header id="site-header"></header>
+<main id="main">
+<section class="page-hero">
+  <div class="scene" data-scene="caribbean"></div>
+  <div class="container"><div class="inner">
+    <div class="crumbs"><a href="index.html">Home</a> / Pricing</div>
+    <span class="eyebrow">Pricing</span>
+    <h1>Clear, honest, <em style="color:var(--gold)">no surprises</em></h1>
+    <p class="lead">Know what planning costs, what a trip might cost, and exactly what you get before you commit.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#estimator">Try the estimator</a><a class="btn btn-ghost" href="contact.html">Request a quote</a></div>
+  </div></div>
+</section>
+
+<!-- ============ EDIT PRICING HERE ============
+     Planning-fee amounts, tier names and sample "from" prices below are starting-point examples.
+     Replace them with your agency's real policy before launch. -->
+<section class="section">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Planning options</span><h2>Choose the level of service you need</h2>
+      <p class="lead">Most standard cruise bookings carry no planning fee. Fees apply only when we design something fully custom, and they’re always quoted upfront.</p></div>
+    <div class="grid g3" style="margin-top:56px;align-items:stretch">
+      <article class="price-card reveal">
+        <h3>Essentials</h3><p class="sub">Standard cruise and resort bookings, expertly matched.</p>
+        <div class="amount">$0 <small>planning fee</small></div>
+        <ul class="ticks"><li>Ship, itinerary and cabin recommendations</li><li>Booking and payment management</li><li>Pre-departure checklist</li><li>Email and phone support</li></ul>
+        <a class="btn btn-outline" href="contact.html?service=ocean">Get started</a>
+      </article>
+      <article class="price-card featured reveal d1">
+        <span class="ribbon">Most popular</span>
+        <h3>Signature</h3><p class="sub">Multi-part trips with flights, hotels, transfers and excursions.</p>
+        <div class="amount">$150 <small>per trip, credited toward booking*</small></div>
+        <ul class="ticks"><li>Everything in Essentials</li><li>Pre- and post-cruise stays</li><li>Air and ground coordination</li><li>Shore excursion planning</li><li>Priority support while traveling</li></ul>
+        <a class="btn btn-primary" href="contact.html?service=quote">Request a quote</a>
+      </article>
+      <article class="price-card reveal d2">
+        <h3>Bespoke</h3><p class="sub">Weddings, large groups, expeditions and fully custom itineraries.</p>
+        <div class="amount">From $350 <small>per project</small></div>
+        <ul class="ticks"><li>Everything in Signature</li><li>Dedicated planner and timeline</li><li>Guest booking page and payment tracking</li><li>Vendor and venue coordination</li><li>On-call support throughout</li></ul>
+        <a class="btn btn-outline" href="contact.html?service=wedding">Discuss your project</a>
+      </article>
+    </div>
+    <p class="note center reveal" style="margin-top:30px">*Fee credit policy and amounts are set by the agency and confirmed in your proposal. Cruise lines and suppliers typically compensate travel advisors directly, which is why standard bookings often carry no additional fee to you.</p>
+  </div>
+</section>
+
+<section class="section alt" id="estimator">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Trip cost estimator</span><h2>Get a ballpark in 30 seconds</h2>
+      <p class="lead">Adjust the options below for an instant estimate. For exact fares and current promotions, request a personalized quote.</p></div>
+    <div class="calc reveal" id="calc" style="margin-top:44px">
+      <div class="inputs">
+        <div class="field"><label for="c-type">Destination</label>
+          <select id="c-type">
+            <option value="110">Mexican Riviera</option>
+            <option value="130" selected>Caribbean &amp; Bahamas</option>
+            <option value="160">Alaska</option>
+            <option value="185">Mediterranean &amp; Greek Isles</option>
+            <option value="200">Hawaii</option>
+            <option value="190">Norwegian Fjords</option>
+            <option value="330">Rhine &amp; Danube River</option>
+            <option value="600">Galápagos</option>
+            <option value="800">Antarctica</option>
+          </select></div>
+        <div class="row2">
+          <div class="field"><label for="c-nights">Length: <strong id="c-nights-out"></strong></label><input id="c-nights" type="range" min="3" max="21" value="7"></div>
+          <div class="field"><label for="c-trav">Party size: <strong id="c-trav-out"></strong></label><input id="c-trav" type="range" min="1" max="10" value="2"></div>
+        </div>
+        <div class="field"><span class="legend">Cabin category</span>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="c-cabin" value="interior"> Interior</label>
+            <label class="choice"><input type="radio" name="c-cabin" value="oceanview"> Oceanview</label>
+            <label class="choice"><input type="radio" name="c-cabin" value="balcony" checked> Balcony</label>
+            <label class="choice"><input type="radio" name="c-cabin" value="suite"> Suite</label>
+          </div></div>
+        <div class="field"><span class="legend">Add-ons</span>
+          <div class="choices">
+            <label class="choice"><input type="checkbox" id="c-ins"> Travel insurance</label>
+            <label class="choice"><input type="checkbox" id="c-air"> Round-trip airfare</label>
+            <label class="choice"><input type="checkbox" id="c-hotel"> 2-night hotel stay</label>
+          </div></div>
+        <p class="note">Estimates assume mid-season sailing, double occupancy, and include an average 15% for taxes, port fees and gratuities.</p>
+      </div>
+      <div class="result" aria-live="polite">
+        <span class="eyebrow" style="color:var(--gold-light)">Estimated total</span>
+        <div class="total" id="r-total">$0</div>
+        <div class="range" id="r-range"></div>
+        <dl>
+          <dt>Cruise fare</dt><dd id="r-fare"></dd><dt>Taxes &amp; fees</dt><dd id="r-tax"></dd>
+          <dt>Insurance</dt><dd id="r-ins"></dd><dt>Airfare</dt><dd id="r-air"></dd><dt>Hotel</dt><dd id="r-hotel"></dd>
+          <dt><strong>Per person</strong></dt><dd id="r-pp"></dd>
+        </dl>
+        <a class="btn btn-primary btn-block" id="r-quote" href="contact.html">Request an exact quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Sample price guide</span><h2>What trips typically cost</h2><p class="lead">Per-person “from” prices, double occupancy, before taxes and extras. Rates change daily with demand.</p></div>
+    <div class="table-wrap reveal" style="margin-top:40px">
+      <table>
+        <thead><tr><th>Experience</th><th>Length</th><th>Style</th><th>From (per person)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Mexican Riviera</strong></td><td>7 nights</td><td>Ocean · Contemporary</td><td><span class="price">$749</span></td></tr>
+          <tr><td><strong>Caribbean &amp; Bahamas</strong></td><td>7 nights</td><td>Ocean · Contemporary</td><td><span class="price">$899</span></td></tr>
+          <tr><td><strong>Alaska Inside Passage</strong></td><td>7 nights</td><td>Ocean · Premium</td><td><span class="price">$1,099</span></td></tr>
+          <tr><td><strong>Mediterranean</strong></td><td>7 nights</td><td>Ocean · Premium</td><td><span class="price">$1,299</span></td></tr>
+          <tr><td><strong>Hawaii</strong></td><td>10 – 14 nights</td><td>Ocean · Premium</td><td><span class="price">$1,699</span></td></tr>
+          <tr><td><strong>Rhine or Danube</strong></td><td>8 days</td><td>River · Premium</td><td><span class="price">$2,299</span></td></tr>
+          <tr><td><strong>Galápagos</strong></td><td>8 days</td><td>Expedition · Small ship</td><td><span class="price">$4,500</span></td></tr>
+          <tr><td><strong>Antarctica</strong></td><td>10 days</td><td>Expedition · Small ship</td><td><span class="price">$8,500</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note center" style="margin-top:18px">Illustrative ranges only. Actual fares vary by sailing date, availability, cabin and promotion.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Good to know</span><h2>How payments typically work</h2></div>
+    <div class="grid g3" style="margin-top:44px">
+<div class="icon-box reveal "><div class="ico" data-ico="tag"></div><h4>Deposits</h4><p>A deposit holds your cabin at booking. Amounts vary by cruise line and cabin type and are confirmed in writing.</p></div><div class="icon-box reveal d1"><div class="ico" data-ico="calendar"></div><h4>Final payment</h4><p>Balances are typically due 60 – 120 days before sailing; we send reminders well in advance.</p></div><div class="icon-box reveal d2"><div class="ico" data-ico="shield"></div><h4>Cancellation &amp; protection</h4><p>Policies differ by supplier. We walk you through them and discuss optional travel insurance.</p></div>
+    </div>
+    <p class="center reveal" style="margin-top:34px"><a class="btn btn-navy" href="faq.html">Read the FAQ</a></p>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="container"><div class="cta-band reveal">
+    <h2>Want exact numbers?</h2><p>Send us your dates and wish list and we’ll prepare a no-obligation proposal.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="contact.html?service=quote">Get a Free Quote</a><a class="btn btn-ghost" href="tel:+15555550123">Call Us</a></div>
+  </div></div>
+</section>
+</main>
+<footer id="site-footer"></footer>
+</body>
+</html>
